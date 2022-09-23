@@ -32,11 +32,11 @@ figure {
     margin: 0 auto;
     background-color: transparent;
     overflow: hidden;
-    width: 400px;
+    width: 100%;
 }
 #vertical-centralizer {
     height: 100%;
-    width: 100%;
+    width: 400px;
     margin-top: 15px;
 }
 figure > img {
@@ -46,23 +46,33 @@ figure > img {
 figcaption {
     font-family: 'Montserrat', sans-serif;
     font-size: 18pt;
+    text-align: center;
+    margin-top: 10px;
 }
 ul {
     height: var(--size-button);
     list-style-type: none;
+    width: 100%;
 }
 li {
-    margin: 8px;
-    border: 0.5px solid rgb(224, 224, 224);
+    margin-top: 8px;
+    background-color: rgb(224, 224, 224);
     border-radius: 15px;
     height: 30px;
-    width: 100px;
+    width: 100%;
     text-align: center;
 }
+li > p {
+    padding-top: 7px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+li > p > a {
+    display: block;
+}
 a {
-    margin: 10px;
     text-decoration: none;
-    color: rgb(224, 224, 224);
+    color: rgb(15,15,15);
 }
 footer {
     background-color: transparent;
@@ -90,4 +100,10 @@ footer > p > a {
 #copyleft {
     display: inline-block;
     transform: rotate(180deg);
+}
+
+@media (max-width: 420px) {
+    #vertical-centralizer {
+        width: calc(100% - 20px);
+    }
 }
