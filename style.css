@@ -32,7 +32,28 @@ figure {
 #vertical-centralizer {
     height: 100%;
     width: 400px;
-    margin-top: 15px;
+    margin-top: 5px;
+}
+header > ul {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+header > ul > li > button {
+    font-size: 10pt;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    background-color: transparent;
 }
 figure > img {
     height: 100px;
