@@ -1,6 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
+    user-select: none;
+    touch-action: none;
 }
 html, body {
     margin: 0;
@@ -72,7 +74,7 @@ figure > p {
     color: rgb(179, 179, 179);
 }
 main {
-    margin-top: 5px;
+    margin-top: 20px;
 }
 ul {
     height: var(--size-button);
@@ -154,6 +156,10 @@ footer > p > a {
 #copyleft {
     display: inline-block;
     transform: rotate(180deg);
+}
+
+.display-none {
+    display: none;
 }
 
 @media (max-width: 420px) {
