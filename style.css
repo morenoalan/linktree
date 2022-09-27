@@ -97,10 +97,14 @@ ul {
 .button {
     margin-top: 10px;
     background-color: rgb(224, 224, 224);
-    border-radius: 15px;
-    height: 30px;
+    border-radius: 19px;
+    height: 38px;
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 .button:hover {
     background-image: linear-gradient(rgb(224, 224, 224)40%, rgb(179, 179, 179));
@@ -109,11 +113,13 @@ ul {
     box-shadow: 0px 0px 3px 1px rgb(179, 179, 179);
 }
 li > p {
-    padding-top: 7px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+}
+li > p:nth-child(2) {
+    margin-top: -5px;
 }
 li > p > a {
     display: block;
@@ -121,6 +127,7 @@ li > p > a {
     overflow: hidden;
     white-space: nowrap;
 }
+li > p > span,
 li > p > a > span {
     font-size: 10px;
     color: rgb(44, 44, 44)
