@@ -89,6 +89,7 @@ ul {
 }
 .icon {
     margin-top: 10px;
+    cursor: pointer;
 }
 .icon > a > img {
     filter: invert(0.9); 
@@ -105,6 +106,7 @@ ul {
     position: relative;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .button:hover {
     background-image: linear-gradient(rgb(224, 224, 224)40%, rgb(179, 179, 179));
