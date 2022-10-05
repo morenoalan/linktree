@@ -5,6 +5,7 @@ function GrabVectors() {
     namingVector = 'material-filled-' + namingVector;
     console.log(namingVector);
     let iframeAddress = 'https://vectours.blogspot.com';
-    console.log(iframeAddress.contentDocument.getElementById(namingVector));
+    console.log(iframeAddress);
+    //cross-origin problems
 }
 GrabVectors();
