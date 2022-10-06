@@ -85,7 +85,7 @@ ul {
     display: inline-flex;
     justify-content: space-evenly;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 .icon {
     margin-top: 10px;
