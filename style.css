@@ -87,11 +87,11 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
 }
-.icon {
+.social > li {
     margin-top: 10px;
     cursor: pointer;
 }
-.icon > a > img {
+.social > li > a > img {
     filter: invert(0.9); 
     height: 40px;
 }

@@ -9,3 +9,12 @@ function GrabVectors() {
     //cross-origin problems
 }
 GrabVectors();
+
+var statusLanguage;
+
+function changeLanguage(statusLanguage){
+    let pTagsList = document.getElementsByClassName('p');
+    for (let i; i < pTagsList.length; i++){
+        pTagsList[i].outerText = '';
+    }
+}
