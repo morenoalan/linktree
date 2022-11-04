@@ -101,8 +101,20 @@ ul {
     height: 40px;
     width: 40px;
 }
-.icons-list > li > button:hover > svg {
-    fill:rgb(179, 179, 179);
+#link-linkedin:hover > svg {
+    fill: rgb(10, 102, 194);
+}
+#link-github:hover > svg {
+    fill: rgb(201, 81, 12);
+}
+#link-instagram:hover > svg {
+    fill: rgb(195, 42, 163);
+}
+#link-twitter:hover > svg {
+    fill: rgb(29, 161, 242);
+}
+#link-spotify:hover > svg {
+    fill: rgb(30, 215, 96);
 }
 .link-icon {
     background-color: transparent;
