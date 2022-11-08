@@ -191,11 +191,11 @@ footer > p > a {
     text-decoration: none;
     color: rgb(224, 224, 224);
 }
-#copyleft {
-    display: inline-block;
-    transform: rotate(180deg);
-}
 
+.invert-horizontal {
+    display: inline-block;
+    transform: scale(-1, 1);
+}
 .display-none {
     display: none;
 }
