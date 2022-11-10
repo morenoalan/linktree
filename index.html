@@ -39,7 +39,7 @@
         </header>
         <main>
             <figure>
-                <img src="https://avatars.githubusercontent.com/u/42527377?v=4" alt="avatar" />
+                <img id='avatar' src='https://avatars.githubusercontent.com/u/42527377?v=4' onmouseover='ChangeAvatar(this, avatarColorful)' onmouseout='ChangeAvatar(this, avatarBlackWhite)' onclick='ChangeTheme(this);' alt='avatar' />
                 <figcaption>Alan Moreno</figcaption>
                 <p class='lang_en'>Data Science Undergrad</p>
                 <p class='lang_pt display-none'>Graduando em Ciência de Dados</p>
@@ -123,11 +123,23 @@
         </main>
     </div>
     <iframe src='#' class='display-none'></iframe>
+    <div id='animated-background' class='area display-none'>
+        <ul class='circles'>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div >
     <footer id='footer'>
-		<p class='lang_en'><a id='author' href='https://www.github.com/morenoalan' target='_blank'>Alan Moreno</a> <span class='invert-horizontal'>&#169;</span> <span id='copyleft-year'>2022</span> | <a href='https://www.github.com/morenoalan/linktree' target='_blank'>Repository</a></p>
-        <p class='lang_pt display-none'><a id='author' href='https://www.github.com/morenoalan' target='_blank'>Alan Moreno</a> <span class='invert-horizontal'>&#169;</span> <span id='copyleft-year'>2022</span> | <a href='https://www.github.com/morenoalan/linktree' target='_blank'>Repositório</a></p>
+		<p><a id='author' href='https://www.github.com/morenoalan' target='_blank'>Alan Moreno</a> <span class='invert-horizontal'>&#169;</span> <span id='copyleft-year'>2022</span> | <a href='https://www.github.com/morenoalan/linktree' target='_blank'>Repository</a></p>
 	</footer>
-
     <script type='text/javascript' id='script' src='./script.js'></script>
 </body>
 </html>
