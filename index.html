@@ -8,12 +8,13 @@
     <meta name='description' content='A beauty list with links to other interesting places.' />
     <meta name='keywords' content='mylinks, linktree, links list' />
     <meta name='author' content='github.com/morenoalan' />
-	<link id='favicon' rel='shortcut icon' href='https://docs.google.com/uc?id=1uHDLyLczYNEdIDrHPjCkGthtKumsc-pr' alt='linktree-logo' />
+	<link id='favicon' rel='shortcut icon' href='https://avatars.githubusercontent.com/u/42527377?v=4' alt='mylinks-logo' />
 	<link rel='preconnect' href='https://fonts.googleapis.com' />
 	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='crossorigin' />
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700' />
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700' />
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700' />
     <link rel='stylesheet' type='text/css' href='./style.css' />
+    <link rel='stylesheet' type='text/css' href='./animated-background.css' />
 </head>
 <body>
     <noscript>
@@ -22,107 +23,111 @@
         Você precisa ativar o JavaScript para executar esta aplicação.<br />
 		<br />
     </noscript>
-    <div id='vertical-centralizer'>
-        <header class='display-none'>
-            <ul>
-                <li>
-                    <button onclick='changeLanguage("lang_pt");'>
-                        Language
-                    </button>
-                </li>
-                <li>
-                    <button>
-                        Theme
-                    </button>
-                </li>
-            </ul>
-        </header>
-        <main>
-            <figure>
-                <img id='avatar' src='https://avatars.githubusercontent.com/u/42527377?v=4' onmouseover='ChangeAvatar(this, avatarColorful)' onmouseout='ChangeAvatar(this, avatarBlackWhite)' onclick='ChangeTheme(this);' alt='avatar' />
-                <figcaption>Alan Moreno</figcaption>
-                <p class='lang_en'>Data Science Undergrad</p>
-                <p class='lang_pt display-none'>Graduando em Ciência de Dados</p>
-                <p class='lang_en'>Bachelor of Architecture and Urbanism</p>
-                <p class='lang_pt display-none'>Bacharel em Arquitetura e Urbanismo</p>
-            </figure>
-            <ul class='icons-list'>
-                <li>
-                    <button class='link-icon' id='link-linkedin' onclick='window.open("http\:\/\/www.linkedin.com\/in\/alanmorenodev", "_blank");'>
-                        <svg id='material-filled-linkedin' fill='#000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' width='480px' height='480px'><path d='M36.5,6h-25C8.468,6,6,8.468,6,11.5v25c0,3.032,2.468,5.5,5.5,5.5h25c3.032,0,5.5-2.468,5.5-5.5v-25	C42,8.468,39.532,6,36.5,6z M18,34c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1V21c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V34z M15.5,18c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5C18,16.881,16.881,18,15.5,18z M35,34	c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-7.5c0-1.379-1.121-2.5-2.5-2.5S25,25.121,25,26.5V34c0,0.553-0.447,1-1,1h-3	c-0.553,0-1-0.447-1-1V21c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v0.541C26.063,20.586,27.462,20,29,20c3.309,0,6,2.691,6,6V34z'/></svg>
-                    </button>
-                </li>
-                <li>
-                    <button class='link-icon' id='link-github' onclick='window.open("https\:\/\/www.github.com\/morenoalan", "_blank");'>
-                        <svg id='material-filled-github' fill='#000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='480px' height='480px'><path d='M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z'/></svg>
-                    </button>
-                </li>
-                <li>
-                    <button class='link-icon' id='link-instagram' onclick='window.open("https\:\/\/www.instagram.com\/moreno_alan", "_blank");'>
-                        <svg id='material-filled-instagram' fill='#000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='480px' height='480px'><path d='M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z'/></svg>
-                    </button>
-                </li>
-                <li>
-                    <button class='link-icon' id='link-twitter' onclick='window.open("https\:\/\/www.twitter.com\/morenoalan", "_blank");'>
-                        <svg id='material-filled-twitter' fill='#000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='480px' height='480px'><path d='M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z'/></svg>
-                    </button>
-                </li>
-                <li>
-                    <button class='link-icon' id='link-spotify' onclick='window.open("https\:\/\/open.spotify.com\/user\/moreno.alan?si=8a5f1d5dc90a4605", "_blank");'>
-                        <svg id='material-filled-spotify' fill='#000000' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='480px' height='480px'><path d='M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M16.057,16.406c-0.188,0-0.282-0.094-0.47-0.188 c-1.411-0.847-3.198-1.317-5.079-1.317c-1.035,0-2.163,0.188-3.104,0.376c-0.188,0-0.376,0.094-0.47,0.094 c-0.376,0-0.658-0.282-0.658-0.658c0-0.376,0.188-0.658,0.564-0.658c1.223-0.282,2.446-0.47,3.763-0.47 c2.163,0,4.139,0.564,5.832,1.505c0.188,0.188,0.376,0.282,0.376,0.658C16.621,16.218,16.339,16.406,16.057,16.406z M17.091,13.773 c-0.188,0-0.376-0.094-0.564-0.188c-1.599-1.035-3.857-1.599-6.302-1.599c-1.223,0-2.352,0.188-3.198,0.376 c-0.188,0.094-0.282,0.094-0.47,0.094c-0.47,0-0.753-0.376-0.753-0.753c0-0.47,0.188-0.658,0.658-0.847 c1.129-0.282,2.258-0.564,3.857-0.564c2.634,0,5.079,0.658,7.149,1.881c0.282,0.188,0.47,0.47,0.47,0.753 C17.844,13.396,17.562,13.773,17.091,13.773z M18.314,10.762c-0.188,0-0.282-0.094-0.564-0.188 c-1.881-1.035-4.609-1.693-7.243-1.693c-1.317,0-2.728,0.188-3.951,0.47c-0.188,0-0.282,0.094-0.564,0.094 C5.428,9.54,5.051,9.069,5.051,8.505c0-0.564,0.282-0.847,0.658-0.941C7.215,7.188,8.814,7,10.507,7 c2.916,0,5.926,0.658,8.278,1.881c0.282,0.188,0.564,0.47,0.564,0.941C19.255,10.386,18.878,10.762,18.314,10.762z'/></svg>
-                    </button>
-                </li>
-            </ul>
-            <ul class='buttons-list'>
-                <li>
-                    <a id='link-whatsapplink' class='link-button' href='https://whatsapplink.gq' target='_blank'>
-                        <p>WhatsApp Link</p>
-                        <p class='lang_en'><span>WHATSAPP LINK GENERATOR</span></p>
-                        <p class='lang_pt display-none'><span>GERADOR DE LINK PARA WHATSAPP</span></p>
-                    </a>
-                </li>
-                <li>
-                    <a id='link-aeddictor' class='link-button' href='https://aeddictor.blogspot.com' target='_blank'>
-                        <p>Æddictor</p>
-                        <p class='lang_en'><span>ADDICTIVE TEXT EDITOR</span></p>
-                        <p class='lang_pt display-none'><span>ADITADO EDITOR DE TEXTO</span></p>
-                    </a>
-                </li>
-                <li>
-                    <a id='link-imc' class='link-button' href='https://imccalc.blogspot.com' target='_blank'>
-                        <p>IMC</p>
-                        <p class='lang_en'><span>BODY MASS INDEX CALCULATOR</span></p>
-                        <p class='lang_pt display-none'><span>CALCULADORA DE ÍNDICE DE MASSA CORPORAL</span></p>
-                    </a>
-                </li>
-                <li class='display-none'>
-                    <a id='link-wikirace' class='link-button' href='https://wikirace.ga' target='_blank'>
-                        <p class='lang_en'>WikiRace <span>[IN PROGRESS]</span></p>
-                        <p class='lang_pt display-none'>WikiRace <span>[EM DESENVOLVIMENTO]</span></p>
-                        <p class='lang_en'><span>WIKIPEDIA GAME</span></p>
-                        <p class='lang_pt display-none'><span>JOGO DA WIKIPÉDIA</span></p>
-                    </a>
-                </li>
-                <li class='display-none'>
-                    <a id='link-severussnake' class='link-button' href='https://severussnake.tk' target='_blank'>
-                        <p class='lang_en'>Severus_Snake <span>[IN PROGRESS]</span></p>
-                        <p class='lang_pt display-none'>Severus_Snake <span>[EM DESENVOLVIMENTO]</span></p>
-                        <p class='lang_en'><span>SNAKE GAME</span></p>
-                        <p class='lang_pt display-none'><span>JOGO DA COBRINHA</span></p>
-                    </a>
-                </li>
-                <li class='display-none'>
-                    <a id='link-ornitoflix' class='link-button' href='https://ornitoflix.ml' target='_blank'>
-                        <p class='lang_en'>Ornitoflix <span>[IN PROGRESS]</span></p>
-                        <p class='lang_pt display-none'>Ornitoflix <span>[EM DESENVOLVIMENTO]</span></p>
-                        <p class='lang_en'><span>MY OWN MEDIA SERVICE</span></p>
-                        <p class='lang_pt display-none'><span>MEU PRÓPRIO SERVIÇO DE MÍDIA</span></p>
-                    </a>
-                </li>
-            </ul>
-        </main>
-    </div>
-    <iframe src='#' class='display-none'></iframe>
+    <header class='display-none'>
+        <ul>
+            <li>
+                <button onclick='changeLanguage("lang_pt");'>
+                    Language
+                </button>
+            </li>
+            <li>
+                <button>
+                    Theme
+                </button>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <figure>
+            <img id='avatar' src='https://avatars.githubusercontent.com/u/42527377?v=4' onmouseover='ChangeAvatar(this, avatarColorful)' onmouseout='ChangeAvatar(this, avatarBlackWhite)' onclick='ChangeTheme(this);' alt='avatar' />
+            <figcaption>Alan Moreno</figcaption>
+            <p class='lang_en'>Data Science Undergrad</p>
+            <p class='lang_pt display-none'>Graduando em Ciência de Dados</p>
+            <p class='lang_en'>Bachelor of Architecture and Urbanism</p>
+            <p class='lang_pt display-none'>Bacharel em Arquitetura e Urbanismo</p>
+        </figure>
+        <ul class='icons-list'>
+            <li>
+                <button class='link-icon' id='link-linkedin' onclick='window.open("http\:\/\/www.linkedin.com\/in\/alanmorenodev", "_blank");'>
+                    <svg id='material-filled-linkedin' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' width='480px' height='480px'><path fill='#FFFFFF00' d="M 11.5,3 C 6.8400363,3 3,6.8400363 3,11.5 v 25 c 0,4.659964 3.8400363,8.5 8.5,8.5 h 25 c 4.659964,0 8.5,-3.840036 8.5,-8.5 v -25 C 45,6.8400363 41.159964,3 36.5,3 Z"/><path fill='#000000' id='path-linkedin' d='M36.5,6h-25C8.468,6,6,8.468,6,11.5v25c0,3.032,2.468,5.5,5.5,5.5h25c3.032,0,5.5-2.468,5.5-5.5v-25 C42,8.468,39.532,6,36.5,6z M18,34c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1V21c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V34z M15.5,18c-1.381,0-2.5-1.119-2.5-2.5c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5C18,16.881,16.881,18,15.5,18z M35,34 c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-7.5c0-1.379-1.121-2.5-2.5-2.5S25,25.121,25,26.5V34c0,0.553-0.447,1-1,1h-3   c-0.553,0-1-0.447-1-1V21c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v0.541C26.063,20.586,27.462,20,29,20c3.309,0,6,2.691,6,6V34z'/></svg>
+                </button>
+            </li>
+            <li>
+                <button class='link-icon' id='link-github' onclick='window.open("https\:\/\/www.github.com\/morenoalan", "_blank");'>
+                    <svg id='material-filled-github' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' width='480px' height='480px'><path fill='#FFFFFF00' d="M 32,2 C 15.478853,2 2,15.478853 2,32 2,48.521147 15.478853,62 32,62 48.521147,62 62,48.521147 62,32 62,15.478853 48.521147,2 32,2 Z"/><path fill='#000000' d='M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z'/></svg>
+                </button>
+            </li>
+            <li>
+                <button class='link-icon' id='link-instagram' onclick='window.open("https\:\/\/www.instagram.com\/moreno_alan", "_blank");'>
+                    <svg id='material-filled-instagram' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='480px' height='480px'><path fill='#FFFFFF00' d='M 8,1.5 C 4.4280655,1.5 1.5,4.4280655 1.5,8 v 8 c 0,3.571934 2.9280655,6.5 6.5,6.5 h 8 c 3.571934,0 6.5,-2.928066 6.5,-6.5 V 8 C 22.5,4.4280655 19.571934,1.5 16,1.5 Z'/><path fill='#000000' d='M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z'/></svg>
+                </button>
+            </li>
+            <li>
+                <button class='link-icon' id='link-twitter' onclick='window.open("https\:\/\/www.twitter.com\/morenoalan", "_blank");'>
+                    <svg id='material-filled-twitter' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='480px' height='480px'><path fill='#FFFFFF00' d='m 15.5,2.4980469 c -2.884279,0 -5.201464,2.1117733 -5.7636719,4.8378906 C 7.544575,6.9705983 5.8078903,5.7431692 4.4277344,4.0507812 3.7047794,3.1635526 2.2945463,3.3800972 1.8710937,4.4433594 1.5268991,5.3081701 1.4785156,6.1720002 1.4785156,7.03125 c 0,0.7986629 0.2665125,1.5149192 0.6347657,2.1855469 C 1.7890814,9.4453136 1.5685768,9.7929245 1.5,10.183594 v 0.05078 c 0,1.221789 0.595281,2.202597 1.3242188,2.994141 -0.2519784,0.346644 -0.3436734,0.784505 -0.2519532,1.203125 0.2671464,0.834182 0.7757357,1.456818 1.3632813,1.988281 -0.3518738,0.01577 -0.4799052,0.07813 -0.9707031,0.07813 H 2 c -1.49873993,9.2e-5 -2.07092416,1.955743 -0.8085938,2.763668 C 3.1811345,20.537014 5.6909876,21.5 8.3476563,21.5 16.539828,21.5 21.5,15.127161 21.5,8.9980469 c 0,-0.081147 -0.002,-0.2178483 -0.0039,-0.3496094 0.635081,-0.5574037 1.279455,-1.1112406 1.75,-1.8144531 0.301869,-0.558962 0.218936,-1.2474596 -0.207032,-1.71875 C 23.15575,4.8797176 23.345191,4.7200763 23.429687,4.4550781 23.84962,3.1402767 22.42096,2.0039579 21.234375,2.7089844 20.773185,2.982742 19.567373,3.4317505 18.837891,3.6484375 17.870007,2.980921 16.7593,2.4980469 15.5,2.4980469 Z'/><path fill='#000000' d='M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z'/></svg>
+                </button>
+            </li>
+            <li>
+                <button class='link-icon' id='link-spotify' onclick='window.open("https\:\/\/open.spotify.com\/user\/moreno.alan?si=8a5f1d5dc90a4605", "_blank");'>
+                    <svg id='material-filled-spotify' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='480px' height='480px'><path fill='#FFFFFF00' d='M 12,0.5 C 5.6818245,0.5 0.5,5.6818245 0.5,12 0.5,18.318175 5.6818245,23.5 12,23.5 18.318175,23.5 23.5,18.318175 23.5,12 23.5,5.6818245 18.318175,0.5 12,0.5 Z'/><path fill='#000000' d='M12,2C6.5,2,2,6.5,2,12s4.5,10,10,10s10-4.5,10-10S17.5,2,12,2z M16.057,16.406c-0.188,0-0.282-0.094-0.47-0.188 c-1.411-0.847-3.198-1.317-5.079-1.317c-1.035,0-2.163,0.188-3.104,0.376c-0.188,0-0.376,0.094-0.47,0.094 c-0.376,0-0.658-0.282-0.658-0.658c0-0.376,0.188-0.658,0.564-0.658c1.223-0.282,2.446-0.47,3.763-0.47 c2.163,0,4.139,0.564,5.832,1.505c0.188,0.188,0.376,0.282,0.376,0.658C16.621,16.218,16.339,16.406,16.057,16.406z M17.091,13.773 c-0.188,0-0.376-0.094-0.564-0.188c-1.599-1.035-3.857-1.599-6.302-1.599c-1.223,0-2.352,0.188-3.198,0.376 c-0.188,0.094-0.282,0.094-0.47,0.094c-0.47,0-0.753-0.376-0.753-0.753c0-0.47,0.188-0.658,0.658-0.847 c1.129-0.282,2.258-0.564,3.857-0.564c2.634,0,5.079,0.658,7.149,1.881c0.282,0.188,0.47,0.47,0.47,0.753 C17.844,13.396,17.562,13.773,17.091,13.773z M18.314,10.762c-0.188,0-0.282-0.094-0.564-0.188 c-1.881-1.035-4.609-1.693-7.243-1.693c-1.317,0-2.728,0.188-3.951,0.47c-0.188,0-0.282,0.094-0.564,0.094 C5.428,9.54,5.051,9.069,5.051,8.505c0-0.564,0.282-0.847,0.658-0.941C7.215,7.188,8.814,7,10.507,7 c2.916,0,5.926,0.658,8.278,1.881c0.282,0.188,0.564,0.47,0.564,0.941C19.255,10.386,18.878,10.762,18.314,10.762z'/></svg>
+                </button>
+            </li>
+        </ul>
+        <ul class='buttons-list'>
+            <li>
+                <a id='link-whatsapplink' class='link-button' href='https://whatsapplink.gq' target='_blank'>
+                    <p>WhatsApp Link</p>
+                    <p class='lang_en'><span>WHATSAPP LINK GENERATOR</span></p>
+                    <p class='lang_pt display-none'><span>GERADOR DE LINK PARA WHATSAPP</span></p>
+                </a>
+            </li>
+            <li>
+                <a id='link-aeddictor' class='link-button' href='https://aeddictor.blogspot.com' target='_blank'>
+                    <p>Æddictor</p>
+                    <p class='lang_en'><span>ADDICTIVE TEXT EDITOR</span></p>
+                    <p class='lang_pt display-none'><span>ADITADO EDITOR DE TEXTO</span></p>
+                </a>
+            </li>
+            <li>
+                <a id='link-clock' class='link-button' href='https://relogio.ga' target='_blank'>
+                    <p>Clock</p>
+                    <p class='lang_en'><span>SIMPLE WATCH WITH LARGE DIAL</span></p>
+                    <p class='lang_pt display-none'><span>RELÓGIO SIMPLES COM MOSTRADOR GRANDE</span></p>
+                </a>
+            </li>
+            <li>
+                <a id='link-imc' class='link-button' href='https://imccalc.blogspot.com' target='_blank'>
+                    <p>IMC</p>
+                    <p class='lang_en'><span>BODY MASS INDEX CALCULATOR</span></p>
+                    <p class='lang_pt display-none'><span>CALCULADORA DE ÍNDICE DE MASSA CORPORAL</span></p>
+                </a>
+            </li>
+            <li class='display-none'>
+                <a id='link-wikirace' class='link-button' href='https://wikirace.ga' target='_blank'>
+                    <p class='lang_en'>WikiRace <span>[IN PROGRESS]</span></p>
+                    <p class='lang_pt display-none'>WikiRace <span>[EM DESENVOLVIMENTO]</span></p>
+                    <p class='lang_en'><span>WIKIPEDIA GAME</span></p>
+                    <p class='lang_pt display-none'><span>JOGO DA WIKIPÉDIA</span></p>
+                </a>
+            </li>
+            <li class='display-none'>
+                <a id='link-severussnake' class='link-button' href='https://severussnake.tk' target='_blank'>
+                    <p class='lang_en'>Severus_Snake <span>[IN PROGRESS]</span></p>
+                    <p class='lang_pt display-none'>Severus_Snake <span>[EM DESENVOLVIMENTO]</span></p>
+                    <p class='lang_en'><span>SNAKE GAME</span></p>
+                    <p class='lang_pt display-none'><span>JOGO DA COBRINHA</span></p>
+                </a>
+            </li>
+            <li class='display-none'>
+                <a id='link-ornitoflix' class='link-button' href='https://ornitoflix.ml' target='_blank'>
+                    <p class='lang_en'>Ornitoflix <span>[IN PROGRESS]</span></p>
+                    <p class='lang_pt display-none'>Ornitoflix <span>[EM DESENVOLVIMENTO]</span></p>
+                    <p class='lang_en'><span>MY OWN MEDIA SERVICE</span></p>
+                    <p class='lang_pt display-none'><span>MEU PRÓPRIO SERVIÇO DE MÍDIA</span></p>
+                </a>
+            </li>
+        </ul>
+    </main>
     <div id='animated-background' class='area display-none'>
         <ul class='circles'>
             <li></li>

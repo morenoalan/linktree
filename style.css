@@ -3,6 +3,7 @@
     padding: 0px;
     user-select: none;
     touch-action: none;
+    -webkit-tap-highlight-color: transparent;
 }
 html, body {
     margin: 0;
@@ -18,23 +19,24 @@ body {
     justify-content: space-between;
     color: rgb(224, 224, 224);
 }
+header {
+    margin-top: 5px;
+}
+header,
+main {
+    height: auto;
+    width: 400px;
+}
 header,
 main,
-#vertical-centralizer,
 figure {
     display: flex;
     flex-direction: column;
     position: relative;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     margin: 0 auto;
     background-color: transparent;
-    width: 100%;
-}
-#vertical-centralizer {
-    height: 100%;
-    width: 400px;
-    margin-top: 5px;
 }
 header > ul {
     display: flex;
@@ -71,9 +73,9 @@ figcaption {
 }
 figure > p {
     font-size: 15px;
+    font-weight: 400;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: rgb(179, 179, 179);
 }
 main {
     margin-top: 20px;
@@ -90,7 +92,7 @@ ul {
     flex-wrap: wrap;
     margin-top: 10px;
 }
-.icons-list > li > button {
+.link-icon {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,33 +100,39 @@ ul {
     cursor: pointer;
     border: none;
 }
-.icons-list > li > button > svg {
-    fill:rgb(224, 224, 224);
+.link-icon > svg {
     height: 40px;
     width: 40px;
 }
-#link-linkedin:hover > svg {
+.link-icon > svg > path:last-child {
+    fill:rgb(224, 224, 224);
+}
+#link-linkedin:hover > svg > path:last-child {
     fill: rgb(10, 102, 194);
 }
-#link-github:hover > svg {
+#link-github:hover > svg > path:last-child {
     fill: rgb(201, 81, 12);
 }
-#link-instagram:hover > svg {
+#link-instagram:hover > svg > path:last-child {
     fill: rgb(195, 42, 163);
 }
-#link-twitter:hover > svg {
+#link-twitter:hover > svg > path:last-child {
     fill: rgb(29, 161, 242);
 }
-#link-spotify:hover > svg {
+#link-spotify:hover > svg > path:last-child {
     fill: rgb(30, 215, 96);
 }
 .link-icon {
     background-color: transparent;
     cursor: pointer;
 }
+.link-icon:hover > svg > path:first-child {
+    fill: rgb(255, 255, 255, 1);
+    /*filter: drop-shadow(0px 0px 1px rgb(255, 255, 255, 1));*/
+}
 .link-button {
     margin-top: 10px;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(255, 255, 255);
     border-radius: 19px;
     height: 38px;
     width: 100%;
@@ -134,6 +142,9 @@ ul {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .link-button:hover {
     background-image: linear-gradient(rgb(224, 224, 224)40%, rgb(179, 179, 179));
@@ -141,14 +152,20 @@ ul {
 .link-button:active {
     box-shadow: 0px 0px 3px 1px rgb(179, 179, 179);
 }
+.link-button > p {
+    padding: 0 10px 0 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+} 
 li > a {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 li > a > p {
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
@@ -171,23 +188,21 @@ a {
 }
 footer {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: transparent;
-    position: relative;
-    height: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     padding-bottom: 10px;
+    height: auto;
     width: 100%;
     text-align: center;
 }
 footer > p {
-    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
-    width: calc(100% - 20px);
-    left: 50%;
-    transform: translate(-50%);
-    text-align: center;
     color: rgb(224, 224, 224);
+    width: calc(100% - 20px);
 }
 footer > p > a {
     text-decoration: none;
@@ -203,123 +218,8 @@ footer > p > a {
 }
 
 @media (max-width: 420px) {
-    #vertical-centralizer {
+    header,
+    main {
         width: calc(100% - 20px);
-    }
-}
-
-/* animated background */
-.area{
-    background: transparent;
-    width: 100%;
-    height:100vh;
-    z-index: -1;
-}
-
-.circles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.circles li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-}
-
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-}
-
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
-
-.circles li:nth-child(7){
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-}
-
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
-@keyframes animate {
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
     }
 }
