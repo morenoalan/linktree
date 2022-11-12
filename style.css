@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    -webkit-user-select: none;
     user-select: none;
     touch-action: none;
     -webkit-tap-highlight-color: transparent;
@@ -17,7 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    color: rgb(224, 224, 224);
+    color: white;
 }
 header {
     margin-top: 5px;
@@ -51,7 +52,6 @@ header > ul > li > button {
     height: auto;
     width: auto;
     cursor: pointer;
-    user-select: none;
     border: none;
     outline: none;
     display: flex;
@@ -63,6 +63,11 @@ figure > img {
     height: 100px;
     border-radius: 50%;
     cursor: pointer;
+}
+figure > svg {
+    fill:rgb(255, 255, 255);
+    position: absolute;
+    transform: scale(0.4) translate(151px, 126px) rotate(346deg);
 }
 figcaption {
     font-family: 'Montserrat', sans-serif;
@@ -103,9 +108,10 @@ ul {
 .link-icon > svg {
     height: 40px;
     width: 40px;
+    overflow: visible;
 }
 .link-icon > svg > path:last-child {
-    fill:rgb(224, 224, 224);
+    fill: rgb(255, 255, 255);
 }
 #link-linkedin:hover > svg > path:last-child {
     fill: rgb(10, 102, 194);
@@ -128,11 +134,15 @@ ul {
 }
 .link-icon:hover > svg > path:first-child {
     fill: rgb(255, 255, 255, 1);
-    /*filter: drop-shadow(0px 0px 1px rgb(255, 255, 255, 1));*/
+}
+.link-icon:active > svg > path:first-child {
+    filter: drop-shadow(0px 0px 3px rgb(255, 255, 255));
 }
 .link-button {
-    margin-top: 10px;
-    background-color: rgb(255, 255, 255);
+    margin-top: 13px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    outline: 3px solid rgb(255, 255, 255); 
     border-radius: 19px;
     height: 38px;
     width: 100%;
@@ -145,12 +155,14 @@ ul {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+
 }
 .link-button:hover {
-    background-image: linear-gradient(rgb(224, 224, 224)40%, rgb(179, 179, 179));
+    background-color: rgb(255, 255, 255);
+    color:rgb(15,15,15);
 }
 .link-button:active {
-    box-shadow: 0px 0px 3px 1px rgb(179, 179, 179);
+    box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
 }
 .link-button > p {
     padding: 0 10px 0 10px;
@@ -180,7 +192,11 @@ li > a > p {
 }
 li > a > p > span {
     font-size: 10px;
-    color: rgb(44, 44, 44)
+    color:rgb(255, 255, 255);
+    /*color: rgb(44, 44, 44)*/
+}
+li > a:hover > p > span {
+    color:rgb(15,15,15);
 }
 a {
     text-decoration: none;
