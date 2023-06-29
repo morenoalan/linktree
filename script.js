@@ -1,7 +1,7 @@
 document.getElementById('copyleft-year').innerHTML =  new Date().getUTCFullYear();
 
-const avatarBlackWhite = "https\:\/\/avatars.githubusercontent.com\/u\/42527377?v=4";
-const avatarColorful = "https\:\/\/media-exp1.licdn.com/dms/image/C4D03AQHwoJLUcFqS3Q/profile-displayphoto-shrink_400_400/0/1668050180065?e=1673481600&v=beta&t=r0ttbzNaIpW36dlA0Fjb0KYxnP0YGuP6eE3nh97ep0w";
+const avatarBlackWhite = "https:\/\/docs.google.com\/uc?id=1uHDLyLczYNEdIDrHPjCkGthtKumsc-pr";
+const avatarColorful = "https:\/\/docs.google.com\/uc?id=1O0vkLZaeW9DeJ2tuF0BkdytTI2qNqtuX";
 
 function ChangeAvatar(element, avatar) {
     element.setAttribute('src', avatar);
