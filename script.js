@@ -1,4 +1,4 @@
-document.getElementById('copyleft-year').innerHTML =  new Date().getUTCFullYear();
+document.getElementById('copyleft-year').innerHTML = new Date().getUTCFullYear();
 
 const avatarBlackWhite = "./media/profile_bw.png";
 const avatarColorful = "./media/profile_colors.jpeg";
