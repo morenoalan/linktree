@@ -104,7 +104,9 @@ ul {
     align-items: center;   
     cursor: pointer;
     border: none;
+    background-color: transparent;
 }
+
 .link-icon > svg {
     height: 40px;
     width: 40px;
@@ -137,10 +139,7 @@ ul {
 #link-spotify:hover > svg > :not(path:first-child) {
     fill: rgb(30, 215, 96);
 }
-.link-icon {
-    background-color: transparent;
-    cursor: pointer;
-}
+
 .link-icon:hover > svg > path:first-child {
     fill: rgb(255, 255, 255, 1);
 }
