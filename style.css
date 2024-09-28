@@ -13,7 +13,7 @@ html, body {
     overflow: auto;
 }
 body {
-    background-image: linear-gradient(rgb(15,15,15), rgb(74,74,74));
+    background-image: linear-gradient(#0f0f0f, #4a4a4a);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,7 +65,7 @@ figure > img {
     cursor: pointer;
 }
 figure > svg {
-    fill:rgb(255, 255, 255);
+    fill:#ffffff;
     position: absolute;
     transform: scale(0.4) translate(151px, 126px) rotate(346deg);
 }
@@ -118,39 +118,42 @@ ul {
 }
 
 .link-icon svg :not(path:first-child) {
-    fill: rgb(255, 255, 255);
+    fill: #ffffff;
 }
 
 #link-linkedin:hover svg path:nth-child(2) {
-    fill: rgb(10, 102, 194);
+    fill: #0a66c2;
 }
 #link-github:hover > svg > :not(path:first-child) {
-    fill: rgb(201, 81, 12);
+    fill: #171515;
 }
 #link-instagram:hover > svg > :not(path:first-child) {
-    fill: rgb(195, 42, 163);
+    fill: #c32aa3;
+}
+#link-bluesky:hover > svg > :not(path:first-child) {
+    fill: #1185fe;
 }
 #link-twitter:hover > svg > :not(path:first-child) {
-    fill: rgb(29, 161, 242);
+    fill: #1da1f2;
 }
 #link-duolingo:hover > svg > :not(path:first-child) {
-    fill: rgb(88, 204, 2);
+    fill: #58cc02;
 }
 #link-spotify:hover > svg > :not(path:first-child) {
-    fill: rgb(30, 215, 96);
+    fill: #1ed760;
 }
 
 .link-icon:hover > svg > path:first-child {
-    fill: rgb(255, 255, 255, 1);
+    fill: #ffffff;
 }
 .link-icon:active > svg > path:first-child {
-    filter: drop-shadow(0px 0px 3px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0px 3px #ffffff);
 }
 .link-button {
     margin-top: 13px;
     background-color: transparent;
-    color: rgb(255, 255, 255);
-    outline: 3px solid rgb(255, 255, 255);
+    color: #ffffff;
+    outline: 3px solid #ffffff;
     border-radius: 19px;
     height: 38px;
     width: 100%;
@@ -166,11 +169,11 @@ ul {
 
 }
 .link-button:hover {
-    background-color: rgb(255, 255, 255);
-    color:rgb(15,15,15);
+    background-color: #ffffff;
+    color:#0f0f0f;
 }
 .link-button:active {
-    box-shadow: 0px 0px 3px 2px rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px 2px #ffffff;
 }
 .link-button > p {
     padding: 0 10px 0 10px;
@@ -200,15 +203,15 @@ li > a > p {
 }
 li > a > p > span {
     font-size: 10px;
-    color:rgb(255, 255, 255);
+    color:#ffffff;
     /*color: rgb(44, 44, 44)*/
 }
 li > a:hover > p > span {
-    color:rgb(15,15,15);
+    color:#0f0f0f;
 }
 a {
     text-decoration: none;
-    color: rgb(15,15,15);
+    color: #0f0f0f;
 }
 footer {
     display: flex;
@@ -225,12 +228,12 @@ footer {
 footer > p {
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
-    color: rgb(224, 224, 224);
+    color: #e0e0e0;
     width: calc(100% - 20px);
 }
 footer > p > a {
     text-decoration: none;
-    color: rgb(224, 224, 224);
+    color: #e0e0e0;
 }
 
 .invert-horizontal {
