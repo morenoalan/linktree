@@ -5,6 +5,7 @@
     user-select: none;
     touch-action: none;
     -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
 html, body {
     margin: 0;
@@ -39,25 +40,30 @@ figure {
     margin: 0 auto;
     background-color: transparent;
 }
-header > ul {
+
+header {
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
-    position: relative;
     align-items: center;
-    justify-content: space-between;
-}
-header > ul > li > button {
-    font-size: 10pt;
-    margin: 0px;
-    height: auto;
-    width: auto;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    display: flex;
     justify-content: flex-start;
-    color: white;
+    gap: 8px;
+}
+.bt_lang {
+    border: none;
     background-color: transparent;
+    cursor: pointer;
+    width: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bt_lang > img {
+    height: 20px;
+    border-radius: 5px;
 }
 figure > img {
     height: 100px;
